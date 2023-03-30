@@ -42,10 +42,12 @@ function GoogleMapsComponent() {
     );
     dispatch(locationActions.changeLocation(locationData));
   };
+
+  const apiKey = process.env.REACT_APP_API_KEY;
   return (
     // For best practice i should use the environtment variable for the API key
     // But ill leave it just like that for now
-    <LoadScript googleMapsApiKey="AIzaSyCeMGbuQRP9yc4VOYH3f1-oCvi4m85hTJQ">
+    <LoadScript googleMapsApiKey={apiKey}>
       <GoogleMap
         options={myOptions}
         mapContainerStyle={containerStyle}
