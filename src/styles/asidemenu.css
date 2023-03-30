@@ -1,0 +1,151 @@
+.side-bar {
+  display: flex;
+}
+
+.main-menu {
+  width: 150px;
+  background-color: #313541;
+  color: white;
+}
+
+.main-menu nav ul {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0;
+}
+
+.main-menu nav ul li {
+  height: 127px;
+  width: 100%;
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  font-size: 14pt;
+  font-family: Roboto;
+  color: #8298a0;
+  border: 1px solid #2c303b;
+  cursor: pointer;
+}
+
+.main-menu nav ul li:hover {
+  background-color: #72cdd2;
+  color: white;
+}
+
+.main-menu nav ul li p {
+  text-align: center;
+  margin: 0;
+}
+
+.main-menu nav ul li div {
+  width: 45px;
+}
+
+.sub-menu {
+  width: 350px;
+  background-color: #282c37;
+  border: 1px solid #20232c;
+  color: white;
+}
+
+.dropdown-container {
+  min-height: 127px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.sub-menu .dropdown-toggle::after {
+  color: #a9abaf;
+}
+
+.sub-menu .dropdown-toggle {
+  text-indent: 1em;
+  background-color: #282c37;
+  color: #7c939b;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: Roboto;
+  width: 300px;
+  height: 40px;
+  text-align: left;
+}
+
+.sub-menu .dropdown-menu {
+  width: 300px;
+  /* position: static !important; */
+}
+
+.location-menu {
+  display: flex;
+  justify-content: center;
+}
+
+.location-menu .btn {
+  text-indent: 1em;
+  background-color: #282c37;
+  height: 40px;
+  width: 300px;
+  border: 0px;
+  text-align: left;
+  border-radius: 0px;
+}
+
+.location-container {
+  width: 300px;
+}
+
+.location {
+  min-height: 40px;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  border-top: 1px solid #242832;
+  border-bottom: 1px solid #242832;
+}
+
+.location .btn {
+  font-weight: 500;
+}
+
+.active-location .btn {
+  background-color: #1c1f27;
+  color: #92d72e;
+  font-weight: 500;
+}
+
+.location .dropdown-toggle {
+  color: white;
+  font-weight: 500;
+}
+
+.active-location .dropdown-toggle {
+  color: #92d72e;
+  font-weight: 500;
+}
+
+.location .dropdown-menu {
+  text-indent: 2em;
+  background-color: #282c37;
+  position: static !important;
+  border: 0px;
+  border-radius: 0px;
+  transform: translate(0px, 0px) !important;
+}
+
+.location .dropdown-menu a {
+  color: #7c939b;
+}
+
+.location .dropdown-menu a:hover {
+  color: #ffffff;
+}
+
+.ative-main-menu {
+  background-color: #72cdd2;
+  color: white !important;
+}

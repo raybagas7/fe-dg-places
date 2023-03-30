@@ -1,0 +1,85 @@
+.place-info-container {
+  position: absolute;
+  width: 350px;
+  min-height: 100%;
+  background-color: #313541;
+  top: 0;
+  right: 0;
+  box-shadow: -3px 10px 20px 0px rgba(0, 0, 0, 0.3);
+  -webkit-box-shadow: -3px 10px 20px 0px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: -3px 10px 20px 0px rgba(0, 0, 0, 0.3);
+}
+
+.place-info-container img {
+  width: 350px;
+  height: 250px;
+  object-fit: cover;
+}
+
+.information-wrapper {
+  padding-left: 35px;
+  padding-top: 25px;
+  padding-right: 35px;
+}
+
+.place-about {
+  color: #cccccc;
+  font-family: Roboto;
+  font-size: 16px;
+  width: 260px;
+  margin-bottom: 40px;
+}
+
+.place-about p {
+  margin: 0;
+}
+
+.location-name {
+  padding-left: 35px;
+  height: 50px;
+  background-color: #72cdd2;
+  display: flex;
+  align-items: center;
+}
+
+.location-name h2 {
+  margin: 0;
+  font-family: 'Myriad Pro', Myriad, 'Liberation Sans', 'Nimbus Sans L',
+    'Helvetica Neue', Helvetica, Arial, sans-serif;
+  color: white;
+  font-size: 24px;
+}
+
+.address-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 21px;
+  width: 260px;
+  color: #cccccc;
+  font-family: Roboto;
+  font-size: 16px;
+  white-space: nowrap;
+}
+
+.address-info {
+  overflow: hidden;
+}
+
+.address-icon {
+  color: #72cdd2;
+  height: 17px;
+  margin-right: 8px;
+}
+
+.address-info a:link {
+  text-decoration: none;
+}
+
+.address-info a:hover {
+  color: white;
+}
+
+.address-info a {
+  color: #cccccc;
+}

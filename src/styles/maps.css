@@ -1,0 +1,131 @@
+main {
+  position: relative;
+  background-color: white;
+  flex: 1 1 0%;
+}
+
+/* .map-marker {
+  background-color: white;
+} */
+
+.map-marker-icon {
+  color: red;
+  position: absolute;
+  top: -68px;
+  left: -22px;
+  width: 45px;
+  height: 71px;
+}
+.big-marker-wrapper {
+  animation-name: big-marker-icon-animation;
+  animation-duration: 0.5s;
+  animation-fill-mode: forwards;
+}
+
+.big-map-marker-icon {
+  color: red;
+  position: absolute;
+  top: -160px;
+  left: -55px;
+  width: 109px;
+  height: 172px;
+}
+
+@keyframes big-marker-icon-animation {
+  0% {
+    transform: translateY(-50px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+.map-marker-circle {
+  border-radius: 50%;
+  background-color: rgb(40, 44, 55);
+
+  position: absolute;
+  top: -57px;
+  left: -13.5px;
+  width: 30px;
+  height: 30px;
+}
+
+.big-map-marker-circle {
+  border-radius: 50%;
+  background-color: #92d72e;
+  position: absolute;
+  top: -140px;
+  left: -45px;
+  width: 90px;
+  height: 90px;
+}
+
+.location-info {
+  background-color: rgb(40, 44, 55);
+  position: absolute;
+  top: -57px;
+  width: fit-content;
+  height: 30px;
+  color: white;
+}
+
+.big-location-info {
+  background-color: #92d72e;
+  position: absolute;
+  top: -140px;
+  width: fit-content;
+  height: 90px;
+  color: white;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  transform-origin: 0;
+  animation-name: big-location-info-animation;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes big-location-info-animation {
+  0% {
+    transform: scaleX(0);
+  }
+  50% {
+    transform: scaleX(0);
+  }
+  100% {
+    transform: scaleX(1);
+  }
+}
+
+.location-info p {
+  font-family: 'Myriad Pro', Myriad, 'Liberation Sans', 'Nimbus Sans L',
+    'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-weight: bold;
+  white-space: nowrap;
+  margin-top: 9px;
+  margin-right: 28px;
+}
+
+.big-location-info h3 {
+  font-family: 'Myriad Pro', Myriad, 'Liberation Sans', 'Nimbus Sans L',
+    'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-weight: bold;
+  white-space: nowrap;
+  font-size: 20px;
+  margin: 0;
+  margin-right: 28px;
+}
+
+.big-location-info p {
+  font-family: 'Myriad Pro', Myriad, 'Liberation Sans', 'Nimbus Sans L',
+    'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  margin: 0;
+  width: 150px;
+  margin-right: 28px;
+}
+
+.marker-wrapper:hover {
+  cursor: pointer;
+}
