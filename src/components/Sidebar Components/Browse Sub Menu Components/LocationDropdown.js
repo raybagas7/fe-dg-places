@@ -54,6 +54,8 @@ const LocationDropdown = ({ locationData }) => {
       <Collapse in={open}>
         <div>
           <Dropdown.Menu variant="dark" onClick={(e) => e.stopPropagation()}>
+            {/* I found about this stopPropagation from but not copy any snippet or code from stackoverflow
+          https://stackoverflow.com/questions/10554446/no-onclick-when-child-is-clicked */}
             {locationData.places.map((place) => (
               <Dropdown.Item key={place} href={`#/${place}`}>
                 {place}
