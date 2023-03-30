@@ -45,8 +45,6 @@ function GoogleMapsComponent() {
 
   const apiKey = process.env.REACT_APP_API_KEY;
   return (
-    // For best practice i should use the environtment variable for the API key
-    // But ill leave it just like that for now
     <LoadScript googleMapsApiKey={apiKey}>
       <GoogleMap
         options={myOptions}
